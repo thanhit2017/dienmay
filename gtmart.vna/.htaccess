@@ -1,0 +1,7 @@
+RewriteEngine ON
+RewriteRule "index.html" "index.php"
+RewriteRule "^(.*)/(.*).html$" "index.php?menu=$1&ten_kd_product=$2"
+RewriteRule "^(.*)/$" "index.php?ten_kd=$1"
+
+
+ErrorDocument 404 http://localhost/gtmart.vna/index.html
